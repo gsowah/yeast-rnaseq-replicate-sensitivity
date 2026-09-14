@@ -79,3 +79,9 @@ write.csv(
   file.path(output_dir, "normalized_counts.csv"),
   row.names = FALSE
 )
+
+# fitted object for QC and downstream analyses
+saveRDS(
+  dds,
+  file.path(output_dir, "full_data_dds.rds")
+)
